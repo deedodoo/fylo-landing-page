@@ -27,6 +27,11 @@ h1, h2, h4  {
     font-family: 'Raleway', sans-serif;
 }
 
+h2 {
+    font-size: 1.8em;
+    margin-top: 0;
+}
+
 .green {
     color: green;
 }
@@ -37,7 +42,13 @@ h1, h2, h4  {
     flex-wrap: wrap;
 }
 
-.flex > div {
+.align-start{
+    align-items: flex-start;
+
+}
+
+.flex > div 
+.flex > ul{
     flex: 1;
 }
 
@@ -119,6 +130,7 @@ button {
 .section-1::before {
     content: '';
     background-image: url('bg-curve-desktop.svg');
+    background-position: center center;
     background-size: cover;
     position: absolute;
     top: -60px;
@@ -216,6 +228,78 @@ footer .circle {
 
 footer p {
 	text-align: right;
+}
+
+@media screen and (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+        margin: 10px 0;
+    }
+
+    nav ul li {
+        margin-left: 10px 20px;
+    
+    }
+
+    body{
+        text-align: center;
+    }
+    
+    .section-1::before {
+        content: '';
+        background-image: url('bg-curve-mobile.svg');
+        height: 80px;
+    }
+
+    .testimonial {
+        width: 100%;
+    }
+
+    
+    .section-2 form input {
+        flex: 1;
+    }
+    
+    .section-2 form button {
+        margin: 20px 0;
+        width: 100%;
+    }
+
+    .user-info{
+        justify-content: center;
+    }
+
+
+    .illustration {
+        margin-top: 30px;
+    }
+    
+
+
+    .flex {
+        flex-direction: column;
+    }
+
+    .flex > div {
+        width: 100%;
+    }
+
+
+    .flex > div:first-child {
+        margin-right: 0px;
+    }
+    
+    .flex >div:last-child {
+        margin-left: 0px;
+    }
+
+    footer ul {
+        padding: 0;
+        width: 100%;
+    }
+
+    
 }
 
 
