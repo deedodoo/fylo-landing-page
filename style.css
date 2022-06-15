@@ -219,6 +219,16 @@ footer .social-media {
 	justify-content: center;
 }
 
+
+.circle:hover{
+	background-color:rgba(255, 255, 255, 0.5);
+}
+
+li:hover {
+	color: rgba(255, 255, 255, 0.505);
+
+}
+
 footer .circle {
 	border: 1px solid #fff;
 	border-radius: 50%;
